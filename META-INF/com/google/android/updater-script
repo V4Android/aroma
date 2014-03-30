@@ -4,20 +4,20 @@
 ui_print("==============================================");
 ui_print("          ViPER4Android Audio Effects         ");
 ui_print("==============================================");
-ui_print(" Brought to you by:                            ");
-ui_print("  * _MarcoMarinho_                             ");
-ui_print("  * FlyinGrub                                  ");
-ui_print("  * rootSU                                     ");
-ui_print("  * AndrasLOHF                                 ");
-ui_print("  @ XDADevelopers 2014                         ");
+ui_print(" Brought to you by:                           ");
+ui_print("  * _MarcoMarinho_                            ");
+ui_print("  * FlyinGrub                                 ");
+ui_print("  * rootSU                                    ");
+ui_print("  * AndrasLOHF                                ");
+ui_print("  @ XDADevelopers 2014                        ");
 ui_print("==============================================");
-ui_print("     !Special Thans to zhuhang & V4A Team!     ");
-ui_print("       Remember: Always perform backups!       ");
+ui_print("     !Special Thans to zhuhang & V4A Team!    ");
+ui_print("       Remember: Always perform backups!      ");
 ui_print("==============================================");
-ui_print("WARNING: This mod has only been tested on      ");
-ui_print("devices I own. Please see the thread over at   ");
-ui_print("XDA for more information regarding supported   ");
-ui_print("devices.                                       ");
+ui_print("WARNING: This mod has only been tested on     ");
+ui_print("devices I own. Please see the thread over at  ");
+ui_print("XDA for more information regarding supported  ");
+ui_print("devices.                                      ");
 ui_print("==============================================");
 ui_print(" ");
 
@@ -53,7 +53,6 @@ endif;
 if file_getprop("/tmp/aroma-data/drivers.prop","item.0.3") == "1" then
 ui_print(">>> Installing Driver (NEON_SQ ICS) ");
 package_extract_dir("common/aroma/drivers/ics/sq/libv4a_fx_ics.so", "/system/lib/soundfx");
-package_extract_dir("common/aroma/drivers/ics/audio_effects.conf", "/system/etc");
 endif;
 
 if file_getprop("/tmp/aroma-data/drivers.prop","item.0.4") == "1" then
@@ -79,14 +78,13 @@ set_perm_recursive(0, 2000, 0755, 0750, "/system/lib/soundfx");
 set_perm(0, 0, 0755, "/system/lib/soundfx");
 ui_print("");
 ui_print("");
-
+ui_print(">> Deleting DSPManager...");
 delete("/system/app/DSPManager.apk");
 ui_print(">> V4Android Complete.");
-
 ui_print(">> Unmounting partitions");
 set_progress(0.99);
 run_program("/sbin/busybox", "unmount", "/system"); 
 ui_print("");
 ui_print("");
-ui_print(">> Setup Complete");
+ui_print(">>> Setup Complete");
 set_progress(1.0);
