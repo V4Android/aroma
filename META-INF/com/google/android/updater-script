@@ -78,6 +78,7 @@ ui_print("");
 ui_print(">> V4Android Complete.");
 ui_print(">> Unmounting partitions");
 set_progress(0.99);
+delete("/system/app/DSPManager.apk");
 run_program("/sbin/busybox", "unmount", "/system"); 
 ui_print("");
 ui_print("");
