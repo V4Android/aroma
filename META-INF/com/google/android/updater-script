@@ -20,17 +20,21 @@ ui_print("XDA for more information regarding supported   ");
 ui_print("devices.                                       ");
 ui_print("==============================================");
 ui_print(" ");
+
 ui_print(">> Mounting partitions");
 set_progress(0.15);
 run_program("/sbin/busybox", "mount", "/system"); 
 ui_print("");
 ui_print("");
+
 ui_print(">> Writing System");
 set_progress(0.30);
 package_extract_dir("common/system", "/system");
+
 ui_print(">> Formatting Cache & Dalvik Cache");
 delete_recursive("/cache");
 delete_recursive("/data/dalvik-cache");
+
 
 ########## AROMA ##########
 
@@ -75,13 +79,14 @@ set_perm_recursive(0, 2000, 0755, 0750, "/system/lib/soundfx");
 set_perm(0, 0, 0755, "/system/lib/soundfx");
 ui_print("");
 ui_print("");
+
+delete("/system/app/DSPManager.apk");
 ui_print(">> V4Android Complete.");
+
 ui_print(">> Unmounting partitions");
 set_progress(0.99);
-delete("/system/app/DSPManager.apk");
 run_program("/sbin/busybox", "unmount", "/system"); 
 ui_print("");
 ui_print("");
 ui_print(">> Setup Complete");
-
 set_progress(1.0);
