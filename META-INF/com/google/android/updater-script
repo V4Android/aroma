@@ -83,7 +83,8 @@ ui_print("");
 ui_print(">> V4Android Complete.");
 ui_print(">> Unmounting partitions");
 set_progress(0.99);
-	run_program("/sbin/busybox", "unmount", "/system"); ui_print("");
+	run_program("/sbin/busybox", "unmount", "/system"); 
+ui_print("");
 ui_print("");
 ui_print(">> Setup Complete");
 
