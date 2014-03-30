@@ -1,11 +1,22 @@
 AROMA Installer | ViPER4Android
-=====
+===
+Description
+---
+* An Aroma Installer for the V4A APP
+* Still in Beta !
 
-This script still W.I.P.
+Download
+---
+Soon ...
 
-Brought to you by:
+TODO
+---
+* add IRS Pack ?
 
-*_MarcoMarinho_
-*rootSU
-*FlyinGrub
-*AndrasLOHF
+Contributors
+---
+* _MarcoMarinho_
+* FlyinGrub
+* rootSU
+* AndrasLOHF
+

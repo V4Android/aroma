@@ -1,12 +1,6 @@
 
 <b>Special thanks to:</b>
 
-flar2 for:
-- module to disable system R/W protection
-
-rovo89 for:
-- Xposed Framework
-
-langer hans for:
-- Sense 5 Toolbox
+V4A Team for his amazing APP !
+Zhuhang the maintener of the official XDA Thread
 
