@@ -74,12 +74,6 @@ endif;
 
 ########## END OF AROMA ##########
 
-ui_print(">> Setting Permissions...");
-set_perm_recursive(0, 2000, 0755, 0750, "/system/lib/soundfx");
-set_perm(0, 0, 0755, "/system/lib/soundfx");
-ui_print("");
-ui_print("");
-
 delete("/system/app/DSPManager.apk");
 ui_print(">> V4Android Complete.");
 
