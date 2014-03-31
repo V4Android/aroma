@@ -1,6 +1,5 @@
 
 <b>Special thanks to:</b>
 
-V4A Team for his amazing APP !
-Zhuhang the maintener of the official XDA Thread
-
+ * V4A Team for his amazing APP !
+ * Zhuhang the maintener of the official XDA Thread

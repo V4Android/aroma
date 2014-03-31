@@ -2,7 +2,7 @@
 # Updater-script for V4Android
 # By MarcoMarinho, rootSU, FlyinGrub & AndrasLOHF
 ui_print("==============================================");
-ui_print("          ViPER4Android Audio Effects         ");
+ui_print("    ViPER4Android Audio Effects               ");
 ui_print("==============================================");
 ui_print(" Brought to you by:                           ");
 ui_print("  * _MarcoMarinho_                            ");
@@ -11,8 +11,8 @@ ui_print("  * rootSU                                    ");
 ui_print("  * AndrasLOHF                                ");
 ui_print("  @ XDADevelopers 2014                        ");
 ui_print("==============================================");
-ui_print("     !Special Thans to zhuhang & V4A Team!    ");
-ui_print("       Remember: Always perform backups!      ");
+ui_print("    !Special Thans to zhuhang & V4A Team!     ");
+ui_print("    Remember: Always perform backups!         ");
 ui_print("==============================================");
 ui_print("WARNING: This mod has only been tested on     ");
 ui_print("devices I own. Please see the thread over at  ");
@@ -41,8 +41,8 @@ delete_recursive("/data/dalvik-cache");
 # Options for Drivers
 
 if file_getprop("/tmp/aroma-data/drivers.prop","item.0.1") == "1" then
-ui_print(">>> Installing Driver (NEON_HQ ICS) ");
-package_extract_dir("common/aroma/drivers/ics/hq/libv4a_fx_ics.so", "/system/lib/soundfx");
+ui_print(">>> Installing Driver (NEON_SQ JB) ");
+package_extract_dir("common/aroma/drivers/jb/sq/libv4a_fx_ics.so", "/system/lib/soundfx");
 endif;
 
 if file_getprop("/tmp/aroma-data/drivers.prop","item.0.2") == "1" then
@@ -51,23 +51,23 @@ package_extract_dir("common/aroma/drivers/jb/hq/libv4a_fx_ics.so", "/system/lib/
 endif;
 
 if file_getprop("/tmp/aroma-data/drivers.prop","item.0.3") == "1" then
+ui_print(">>> Installing Driver (NEON JB) ");
+package_extract_dir("common/aroma/drivers/jb/neon/libv4a_fx_ics.so", "/system/lib/soundfx");
+endif;
+
+if file_getprop("/tmp/aroma-data/drivers.prop","item.0.4") == "1" then
 ui_print(">>> Installing Driver (NEON_SQ ICS) ");
 package_extract_dir("common/aroma/drivers/ics/sq/libv4a_fx_ics.so", "/system/lib/soundfx");
 endif;
 
-if file_getprop("/tmp/aroma-data/drivers.prop","item.0.4") == "1" then
-ui_print(">>> Installing Driver (NEON_SQ JB) ");
-package_extract_dir("common/aroma/drivers/jb/sq/libv4a_fx_ics.so", "/system/lib/soundfx");
-endif;
-
 if file_getprop("/tmp/aroma-data/drivers.prop","item.0.5") == "1" then
-ui_print(">>> Installing Driver (NEON ICS) ");
-package_extract_dir("common/aroma/drivers/ics/neon/libv4a_fx_ics.so", "/system/lib/soundfx");
+ui_print(">>> Installing Driver (NEON_HQ ICS) ");
+package_extract_dir("common/aroma/drivers/ics/hq/libv4a_fx_ics.so", "/system/lib/soundfx");
 endif;
 
 if file_getprop("/tmp/aroma-data/drivers.prop","item.0.6") == "1" then
-ui_print(">>> Installing Driver (NEON JB) ");
-package_extract_dir("common/aroma/drivers/jb/neon/libv4a_fx_ics.so", "/system/lib/soundfx");
+ui_print(">>> Installing Driver (NEON ICS) ");
+package_extract_dir("common/aroma/drivers/ics/neon/libv4a_fx_ics.so", "/system/lib/soundfx");
 endif;
 
 
