@@ -81,7 +81,7 @@ selectbox(
 
   "NEON_SQ JB","Super Quality driver (4.1.1+)",0,
   "NEON_HQ JB","High Quality driver (4.1.1+)",0,
-  "NEON JB","Power Save driver (4.1.1+)",0
+  "NEON JB","Power Save driver (4.1.1+)",0,
   "NEON_SQ ICS","Super Quality driver (4.0.3+)",0,
   "NEON_HQ ICS","High Quality driver (4.0.3+)",0,
   "NEON ICS","Power Save driver (4.0.3+)",0,
