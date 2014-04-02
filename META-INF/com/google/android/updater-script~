@@ -40,32 +40,32 @@ delete_recursive("/data/dalvik-cache");
 
 # Options for Drivers
 
-if file_getprop("/tmp/aroma-data/drivers.prop","selected") == "1" then
+if file_getprop("/tmp/aroma-data/drivers.prop","item.0.1") == "1" then
 ui_print(">>> Installing Driver (NEON_SQ JB) ");
 package_extract_dir("common/aroma/drivers/jb/sq/libv4a_fx_ics.so", "/system/lib/soundfx");
 endif;
 
-if file_getprop("/tmp/aroma-data/drivers.prop","selected") == "2" then
+if file_getprop("/tmp/aroma-data/drivers.prop","item.0.2") == "1" then
 ui_print(">>> Installing Driver (NEON_HQ JB) ");
 package_extract_dir("common/aroma/drivers/jb/hq/libv4a_fx_ics.so", "/system/lib/soundfx");
 endif;
 
-if file_getprop("/tmp/aroma-data/drivers.prop","selected") == "3" then
+if file_getprop("/tmp/aroma-data/drivers.prop","item.0.3") == "1" then
 ui_print(">>> Installing Driver (NEON JB) ");
 package_extract_dir("common/aroma/drivers/jb/neon/libv4a_fx_ics.so", "/system/lib/soundfx");
 endif;
 
-if file_getprop("/tmp/aroma-data/drivers.prop","selected") == "4" then
+if file_getprop("/tmp/aroma-data/drivers.prop","item.0.4") == "1" then
 ui_print(">>> Installing Driver (NEON_SQ ICS) ");
 package_extract_dir("common/aroma/drivers/ics/sq/libv4a_fx_ics.so", "/system/lib/soundfx");
 endif;
 
-if file_getprop("/tmp/aroma-data/drivers.prop","selected") == "5" then
+if file_getprop("/tmp/aroma-data/drivers.prop","item.0.5") == "1" then
 ui_print(">>> Installing Driver (NEON_HQ ICS) ");
 package_extract_dir("common/aroma/drivers/ics/hq/libv4a_fx_ics.so", "/system/lib/soundfx");
 endif;
 
-if file_getprop("/tmp/aroma-data/drivers.prop","selected") == "6" then
+if file_getprop("/tmp/aroma-data/drivers.prop","item.0.6") == "1" then
 ui_print(">>> Installing Driver (NEON ICS) ");
 package_extract_dir("common/aroma/drivers/ics/neon/libv4a_fx_ics.so", "/system/lib/soundfx");
 endif;
