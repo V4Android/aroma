@@ -79,7 +79,7 @@ delete("/system/app/DSPManager.apk");
 ui_print(">> V4Android Complete.");
 ui_print(">> Unmounting partitions");
 set_progress(0.99);
-run_program("/sbin/busybox", "unmount", "/system"); 
+run_program("/sbin/busybox", "umount", "/system"); 
 ui_print("");
 ui_print("");
 ui_print(">>> Setup Complete");
