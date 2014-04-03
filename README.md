@@ -3,11 +3,11 @@ AROMA Installer | ViPER4Android
 Description
 ---
 * An Aroma Installer for the V4A APP
-* Still in Beta !
+* Working Fine.
 
 Download
 ---
-Soon ...
+http://www.androidfilehost.com/?fid=23329332407583767
 
 TODO
 ---
